@@ -1,0 +1,7 @@
+VoiceGuard V2 for BetterDiscord (5.1.2)
+
+Finish your voice call before replacing VoiceGuard. Reloading an older version can restore its tracked local mutes.
+Open Discord User Settings, then BetterDiscord, Plugins, and Open Plugins Folder. Back up the installed VoiceGuard.plugin.js and replace it with the file from this ZIP. Keep your existing configuration files and use one VoiceGuard plugin file at a time.
+The dock supports resizing with the lower-left handle or the arrow keys. Open the ellipsis menu, then Settings and Appearance for theme, font, text size, and dimensions.
+
+See SECURITY.md for local storage, profile image preferences, account switching, and checksum verification.

@@ -1,0 +1,13 @@
+{
+  "name": "voiceguard-betterdiscord",
+  "version": "5.1.2",
+  "private": true,
+  "description": "Local voice protection and a resizable roster for BetterDiscord",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node tests/test_voiceguard_isolated.js --seed-smoke"
+  }
+}
