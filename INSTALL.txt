@@ -1,4 +1,4 @@
-VoiceGuard V2 for BetterDiscord (5.1.2)
+VoiceGuard for BetterDiscord
 
 Finish your voice call before replacing VoiceGuard. Reloading an older version can restore its tracked local mutes.
 Open Discord User Settings, then BetterDiscord, Plugins, and Open Plugins Folder. Back up the installed VoiceGuard.plugin.js and replace it with the file from this ZIP. Keep your existing configuration files and use one VoiceGuard plugin file at a time.

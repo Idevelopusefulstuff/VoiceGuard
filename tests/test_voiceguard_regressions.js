@@ -516,7 +516,7 @@ const cases = {
         f.plugin.settings.loudThreshold = 0.71;
         assert.equal(f.plugin.selectedProtectionProfile(), "custom");
     },
-    "Studio overview and profile controls show actual readiness and preset boundaries"(f) {
+    "Plugin overview and profile controls show actual readiness and preset boundaries"(f) {
         assert.equal(f.plugin.setPanelView("overview"), true);
         assert.ok(!f.plugin.panel.innerHTML.includes("Gather evidence"));
         assert.ok(f.plugin.panel.innerHTML.includes("Signal coverage"));

@@ -1,4 +1,4 @@
-# VoiceGuard V2 security and privacy
+# VoiceGuard security and privacy
 
 ## On-device protection
 
@@ -8,7 +8,7 @@ VoiceGuard reads the Discord voice roster and inbound audio-level statistics to 
 
 - BetterDiscord stores preferences, participant IDs for chosen protection policies, and a journal for pending audio restoration. VoiceGuard keeps recent activity in memory for the session.
 - Remembering offenders across rejoins is off for fresh installations. If you enable it, the default retention is 30 days. Use Clear remembered offenders in BetterDiscord’s VoiceGuard settings to remove earlier history.
-- Audio recovery records created in 5.1.2 include the owning Discord account ID. Switching accounts pauses protection until you switch back or re-enable VoiceGuard. Use Discord’s audio controls to check any sound settings left by earlier releases with ownerless recovery records.
+- Audio recovery records include the owning Discord account ID. Switching accounts pauses protection until you switch back or re-enable VoiceGuard. Use Discord’s audio controls to check any sound settings left by earlier releases with ownerless recovery records.
 - Trusted and Soft policies and remembered history are stored at the BetterDiscord installation level. Plan account-level storage for those records if the installation is shared across people.
 
 ## Profile images and presets

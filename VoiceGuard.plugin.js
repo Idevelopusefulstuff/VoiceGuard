@@ -1,8 +1,8 @@
 /**
  * @name VoiceGuard
  * @author VoiceGuardTeam
- * @description VoiceGuard V2: a resizable call roster with local protection and a customizable appearance.
- * @version 5.1.2
+ * @description A resizable Discord voice roster with local protection and a customizable appearance.
+ * @version 1.0.0
  */
 
 const VG_THEMES = {
@@ -25,7 +25,7 @@ const VG_DEFAULT_APPEARANCE = Object.freeze({ theme: "discord", font: "discord",
 module.exports = class VoiceGuard {
     constructor(meta) {
         this.meta = meta;
-        this.version = "5.1.2";
+        this.version = "1.0.0";
         this.detectorProfile = "rolling-v1";
         this.panel = null;
         this.styleNode = null;
@@ -3314,7 +3314,7 @@ module.exports = class VoiceGuard {
         html += '<div id="vg3-content" class="vg3-content" data-vg-key="content"' + (this.settings.panelCollapsed ? ' inert aria-hidden="true"' : "") + '>';
         if (!this.settings.panelCollapsed) {
             const countLabel = count + (count === 1 ? ' person' : ' people');
-            html += '<div class="vg3-head" data-vg-key="head"><strong class="vg5-title" title="VoiceGuard V2 · ' + this.version + '">VoiceGuard</strong><span class="vg5-call-count" title="' + countLabel + '" aria-label="' + countLabel + '">' + count + '</span><button type="button" class="vg3-auto-switch" data-vg-action="toggle-auto-mute" role="switch" aria-label="Automatic local muting" aria-checked="' + this.settings.autoMute + '" title="Pausing Auto keeps existing mutes.">Auto ' + (this.settings.autoMute ? 'on' : 'off') + '</button><button type="button" class="vg6-tools-trigger" data-vg-action="toggle-tools" aria-label="VoiceGuard tools" aria-expanded="' + this.toolsOpen + '" aria-controls="vg6-tools" title="Find, signal, activity, and settings">&hellip;</button></div>';
+            html += '<div class="vg3-head" data-vg-key="head"><strong class="vg5-title">VoiceGuard</strong><span class="vg5-call-count" title="' + countLabel + '" aria-label="' + countLabel + '">' + count + '</span><button type="button" class="vg3-auto-switch" data-vg-action="toggle-auto-mute" role="switch" aria-label="Automatic local muting" aria-checked="' + this.settings.autoMute + '" title="Pausing Auto keeps existing mutes.">Auto ' + (this.settings.autoMute ? 'on' : 'off') + '</button><button type="button" class="vg6-tools-trigger" data-vg-action="toggle-tools" aria-label="VoiceGuard tools" aria-expanded="' + this.toolsOpen + '" aria-controls="vg6-tools" title="Find, signal, activity, and settings">&hellip;</button></div>';
             html += this.renderViewNavigation(count);
             html += '<div class="vg3-guard-strip" data-vg-key="guard"' + (showHealth ? '' : ' hidden') + '><span class="vg3-health ' + (telemetryReady && !partial ? "ready" : "waiting") + '" title="' + this.esc(statusReason || status) + '">' + status + '</span>';
             if (this.settings.showCallSummary) html += '<span class="vg3-summary" aria-label="Call summary"' + (this.panelView === "overview" ? '' : ' hidden') + '>' + activeCount + ' live · ' + mutedCount + ' muted' + (alertCount ? ' · <b>' + alertCount + ' alerts</b>' : '') + '</span>';
@@ -4151,7 +4151,7 @@ module.exports = class VoiceGuard {
         intro.style.borderRadius = "12px";
         intro.style.background = "var(--background-secondary)";
         const heading = document.createElement("strong");
-        heading.textContent = "VoiceGuard V2 · " + this.version;
+        heading.textContent = "VoiceGuard";
         heading.style.fontSize = "18px";
         heading.style.letterSpacing = "-0.5px";
         const description = document.createElement("p");

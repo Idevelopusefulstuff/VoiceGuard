@@ -4,7 +4,7 @@ VoiceGuard is a BetterDiscord plugin that detects sustained loud audio and appli
 
 ## Install
 
-1. Download `VoiceGuard.plugin.js` from the [5.1.2 release](https://github.com/Idevelopusefulstuff/VoiceGuard/releases/tag/v5.1.2). The release includes a ZIP and SHA-256 checksums.
+1. Download `VoiceGuard.plugin.js` from the [GitHub release](https://github.com/Idevelopusefulstuff/VoiceGuard/releases/tag/v1.0.0). The release includes a ZIP and SHA-256 checksums.
 2. Open Discord’s BetterDiscord settings, select **Plugins**, then **Open Plugins Folder**.
 3. Put `VoiceGuard.plugin.js` in that folder and enable VoiceGuard. When updating, finish your voice call first and replace the existing file.
 
@@ -14,7 +14,7 @@ The lower-left handle resizes the roster. Open the ellipsis menu and choose **Se
 
 - The detector uses audio levels from the Discord client. Mutes and volume changes apply to your local playback.
 - BetterDiscord stores preferences and selected participant policies on your device. Profile images from Discord’s CDN are opt-in.
-- The 5.1.2 release was tested with simulated voice stores and a separate Chromium profile. Live voice-call verification is pending.
+- Release verification uses simulated voice stores and an isolated Chromium profile. Live voice-call verification is pending.
 
 For local storage, audio restoration, and vulnerability reporting, see [SECURITY.md](SECURITY.md).
 

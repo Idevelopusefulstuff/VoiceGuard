@@ -273,6 +273,8 @@ function main() {
     expect(!plugin.panel.className.includes("vg3-collapsed"), "drawer remained collapsed after reopening");
     const settingsPanel = plugin.getSettingsPanel();
     const settingsText = elementText(settingsPanel);
+    expect(!settingsText.includes(releaseVersion) && !settingsText.includes("VoiceGuard V2"), "settings show a legacy brand or release label");
+    expect(!plugin.panel.innerHTML.includes("VoiceGuard V2"), "roster title contains the legacy brand");
     expect(settingsText.includes("Interface"), "production settings interface section is missing");
     expect(settingsText.includes("Detection"), "production settings detection section is missing");
     expect(settingsText.includes("Soft Voiceban"), "production settings soft voiceban section is missing");
